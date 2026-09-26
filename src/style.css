@@ -4,3 +4,28 @@
 @media(max-width:1150px){.layout{grid-template-columns:230px minmax(0,1fr)}.toc{display:none}main{padding:30px 45px 0}.brand-sub{display:none}}
 @media(max-width:700px){header{height:64px;padding:0 18px;gap:13px}.brand{font-size:18px}.brand-divider,.header-link,kbd{display:none}.search-wrap{width:auto;flex:1}.search-wrap input{padding-right:8px}.mobile-toggle{display:block;background:transparent;border:1px solid var(--border);padding:5px 8px;border-radius:4px;font-size:11px}.layout{display:block}.sidebar{display:none;position:fixed;top:64px;left:0;bottom:0;height:auto;width:260px;z-index:9;box-shadow:10px 0 30px #20351b15}.sidebar.open{display:block}main{padding:25px 22px 0}.breadcrumb{font-size:10px;margin-bottom:25px;gap:8px}h1{font-size:33px}.subtitle{font-size:16px}.intro{font-size:13px}.search-results{position:fixed;top:63px;left:10px;right:10px;width:auto}.start-cards{gap:10px}.start-cards>a{padding:15px}.start-cards h3{font-size:12px}.start-cards h3 span{display:none}.diagram>div{flex-wrap:wrap}.diagram-step{min-width:38%}.diagram .arrow{display:none}.reference-table>div{grid-template-columns:1fr;gap:6px}h2{font-size:17px}.section-heading{align-items:start}.section-heading h2{font-size:17px}pre{font-size:10px;padding:16px}.muted{display:none}footer{flex-direction:column}.analogy,.pitfall{padding:16px}.pagination strong{font-size:11px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+/* Keep narrow screens readable and controls comfortable to tap. */
+@media (max-width: 700px) {
+  header { flex-wrap: wrap; height: auto; min-height: 112px; padding: 10px 16px; gap: 8px 12px; }
+  .brand { flex: 1; }
+  .mobile-toggle { order: 1; min-width: 64px; min-height: 44px; }
+  .search-wrap { order: 2; flex: 0 0 100%; max-width: none; min-width: 0; }
+  .search-wrap input { height: 40px; font-size: 16px; }
+  .search-results { top: 112px; max-height: calc(100dvh - 130px); }
+  .sidebar { top: 112px; width: min(300px, 90vw); overscroll-behavior: contain; }
+  .nav-group a { min-height: 44px; font-size: 14px; }
+  .code-bar button, .primary, .text-button { min-height: 44px; min-width: 44px; }
+  .section-heading select, .demo input { font-size: 16px; min-height: 44px; }
+  .breadcrumb { flex-wrap: wrap; }
+  section { scroll-margin-top: 132px; }
+  .intro, .analogy p, .reference-table p, .comparison p, .pitfall p { font-size: 14px; }
+  pre { font-size: 12px; }
+  .analogy > div, .pitfall > div { min-width: 0; overflow-wrap: anywhere; }
+}
+
+@media (max-width: 380px) {
+  .start-cards { grid-template-columns: 1fr; }
+  .section-heading { flex-wrap: wrap; }
+  main { padding-left: 16px; padding-right: 16px; }
+}

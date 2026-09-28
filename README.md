@@ -1,6 +1,6 @@
-# Fieldnotes
+# Tiny Steps
 
-A beginner-friendly JavaScript and React documentation website. An independent learning reference, not official or exhaustive API documentation.
+A beginner-friendly JavaScript and React learning path. Each short lesson explains one idea with plain language, an everyday analogy, a small code sample, and a simple practice prompt.
 
 Requires Node.js 20.19+ or 22.12+.
 
@@ -11,7 +11,7 @@ npm run dev
 
 Open the local URL Vite prints. `npm run build` creates the production site; `npm run preview` serves it.
 
-Edit articles in `src/content.js`. Navigation uses bookmarkable URL hashes. Search includes article bodies. The comparison selector changes the language perspective. Each article links to authoritative documentation.
+Edit lessons in `src/content.js`. Navigation uses bookmarkable URL hashes, search covers lesson titles and introductions, and each lesson links to authoritative documentation.
 
 ## GitHub Pages
 
@@ -25,4 +25,4 @@ Article links use hashes (for example, `/js-react-simple/#state`), so direct lin
 
 ## Mobile support
 
-Below 700px the sidebar becomes a collapsible Menu, search gets its own row, and navigation and form controls have larger touch targets. Reference rows stack, code blocks scroll horizontally, and cards stack on the smallest screens. Keyboard navigation and reduced-motion preferences are supported.
+Below 720px the sidebar becomes a collapsible lesson menu. Search expands when focused, code blocks scroll horizontally, and cards stack on narrow screens. Keyboard navigation and reduced-motion preferences are supported.
